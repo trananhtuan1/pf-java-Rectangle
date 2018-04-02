@@ -2,15 +2,14 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println("nhap chieu dai ");
-        Scanner scanner = new Scanner(System.in);
-        double cao = scanner.nextDouble();
-        System.out.println("nhap chieu rong ");
-        double rong = scanner.nextDouble();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("height ");
+//        double height = scanner.nextDouble();
+//        System.out.println("width ");
+//        double width = scanner.nextDouble();
 
-        Rectangle re1 = new Rectangle(cao, rong);
-        System.out.println("Your Rectangle \n" + re1.display());
-        System.out.println("chu vi: "+ re1.chuvi());
-        System.out.println("dien tich " + re1.dientich());
+        Rectangle hehe = new Rectangle(4, 5);
+        System.out.println("chu vi " + hehe.Area());
+        System.out.println("dien tich " + hehe.Perimeter());
     }
 }

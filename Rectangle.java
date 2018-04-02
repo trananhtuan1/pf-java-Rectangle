@@ -1,24 +1,25 @@
 
 
 public class Rectangle {
-    double cao, rong;
+    double width, height;
 
-    public Rectangle(double cao, double rong) {
-        this.cao = cao;
-        this.rong = rong;
+    public Rectangle() {
+        this.width = 1.0;
+        this.height = 1.0;
     }
 
-    public double dientich() {
-        double Area = cao * rong;
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double Area() {
+        double Area = width * height;
         return Area;
     }
 
-    public double chuvi() {
-        double Perimeter = (cao + rong) * 2;
+    public double Perimeter() {
+        double Perimeter = (width + height) * 2;
         return Perimeter;
-    }
-
-    public String display() {
-        return "Rectangle(" + "rong= " + rong + ", cao= " + cao + ")";
     }
 }
